@@ -5,8 +5,8 @@ import { removeRewlines } from "../helpers/text";
 
 async function getHtmlByLink(link) {
   const browser = await puppeteer.launch({
-    executablePath:
-      "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    // executablePath:
+    //   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
   });
   const page = await browser.newPage({ javascriptEnabled: true });
   await page.goto(link);
